@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="_variables.scss" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="_bootswatch.scss" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+		<title>Se connecter</title>
+
+	</head>
+
+	<body>
+
+            <!-- quand le form est envoyé/soumis, les données du form sont envoyés au fichier authenticate.php pour être traitées -->
+			<!-- <form action="authenticate.php" method="post"> -->
+
+				<!-- <input type="text" name="username" placeholder="Nom d'utilisateur" id="username" required> -->
+                <!-- name="" c'est pour que le serveur reconnait les champs name="username" donnera $_POST['username'] -->
+				<!-- <input type="password" name="password" placeholder="Mot de passe" id="password" required> -->
+				<!-- <input type="submit" value="Se connecter"> -->
+
+			<!-- </form> -->
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				<div class="container-fluid">
+				  <a class="navbar-brand happytext">Happy Cats</a>
+				</div>
+			</nav>
+
+			<form action="authenticate.php" method="post">
+				<div class="container">
+    				<div class="row justify-content-center">
+						<div class="col-sm-4 text-center">
+
+							<div class="form-group">
+								<input type="text" name="username" class="form-control transparent-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom d'utilisateur" style="margin: 10px" required>
+							</div>
+
+							<div class="form-group">
+								<input type="password" name="password" class="form-control transparent-input" id="exampleInputPassword1" placeholder="Mot de passe" style="margin: 10px" required>
+							</div>
+
+							<button type="submit" class="btn btn-success">Se connecter</button>
+
+						</div>
+					</div>
+				</div>
+			</form>
+
+			<!-- <div class="containercatsvg"> -->
+				<div class="catsvg"><img src="images/cat.svg" alt="catsvg"></div>
+			<!-- </div> -->
+
+	</body>
+
+</html>
